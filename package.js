@@ -1,8 +1,9 @@
 Package.describe({
   name: 'quietcreep:formation-file-input-blaze',
   summary: 'Blaze-based widget for file uploading using edgee:slingshot',
-  version: '1.0.0_5',
-  git: 'https://github.com/quietcreep/formation-file-input-blaze.git'
+  version: '2.0.1',
+  git: 'https://github.com/quietcreep/formation-file-input-blaze.git',
+  documentation: null,
 });
 
 Package.onUse( function( api ){
@@ -11,8 +12,8 @@ Package.onUse( function( api ){
 
   api.use( 'templating', 'client' );
 
-  api.use( 'quietcreep:formation-file-input-core@1.0.0_5', both );
-  api.imply( 'quietcreep:formation-file-input-core@1.0.0_5', both );
+  api.use( 'quietcreep:formation-file-input-core@2.0.1', both );
+  api.imply( 'quietcreep:formation-file-input-core@2.0.1', both );
 
   api.use( 'edgee:slingshot@0.2.0', both );
 
